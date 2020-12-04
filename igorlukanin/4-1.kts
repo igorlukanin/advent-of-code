@@ -4,7 +4,7 @@ import java.nio.file.Files
 import java.nio.file.Paths
 
 val entries = Files
-        .readString(Paths.get(".inputs/4.txt"))
+        .readString(Paths.get("inputs/4.txt"))
         .split(Regex("\n\n"))
         .map { it
                 .split(Regex("\\s|\n"))

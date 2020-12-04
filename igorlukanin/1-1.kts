@@ -5,7 +5,7 @@ import java.nio.file.Paths
 import kotlin.Int.Companion.MAX_VALUE
 
 val numbers = Files
-        .readAllLines(Paths.get(".inputs/1.txt"))
+        .readAllLines(Paths.get("inputs/1.txt"))
         .map(Integer::parseInt)
         .sortedDescending()
 

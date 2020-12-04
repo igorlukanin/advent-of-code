@@ -4,7 +4,7 @@ import java.nio.file.Files
 import java.nio.file.Paths
 
 val entries = Files
-        .readAllLines(Paths.get(".inputs/3.txt"))
+        .readAllLines(Paths.get("inputs/3.txt"))
 
 fun List<String>.countTrees(right: Int, down: Int) = this
         .filterIndexed { i, it -> when {
@@ -16,7 +16,7 @@ fun List<String>.countTrees(right: Int, down: Int) = this
         }}
         .size
 
-val slopes = listOf(
+val slopes = arrayOf(
         Pair(1, 1),
         Pair(3, 1),
         Pair(5, 1),

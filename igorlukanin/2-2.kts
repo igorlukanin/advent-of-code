@@ -18,7 +18,7 @@ data class Entry(
 }
 
 val entries = Files
-        .readAllLines(Paths.get(".inputs/2.txt"))
+        .readAllLines(Paths.get("inputs/2.txt"))
         .map {
             val parts = it.split('-', ' ', ':')
             Entry(Integer.parseInt(parts[0]), Integer.parseInt(parts[1]), parts[2][0], parts[4])

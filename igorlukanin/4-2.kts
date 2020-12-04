@@ -5,7 +5,7 @@ import java.nio.file.Paths
 import java.util.regex.Pattern
 
 val entries = Files
-        .readString(Paths.get(".inputs/4.txt"))
+        .readString(Paths.get("inputs/4.txt"))
         .split(Pattern.compile("\n\n"))
         .map { it
                 .split(Pattern.compile("\\s|\n"))

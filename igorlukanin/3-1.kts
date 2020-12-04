@@ -4,7 +4,7 @@ import java.nio.file.Files
 import java.nio.file.Paths
 
 val entries = Files
-        .readAllLines(Paths.get(".inputs/3.txt"))
+        .readAllLines(Paths.get("inputs/3.txt"))
 
 val count = entries
         .filterIndexed { i, it ->
